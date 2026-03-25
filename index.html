@@ -25,7 +25,7 @@
           <li><a href="#home">HOME</a></li>
           <li><a href="#service">SERVICES</a></li>
           <li><a href="#room">ACCOMODATION</a></li>
-          <li><a href="#booking">CONTACT</a></li>
+          <li><a href="#booking">RESERVATION</a></li>
         </ul>
       </nav>
 
@@ -195,45 +195,38 @@
       </div>
     </section>
 
-    <section class="booking" id="booking">
-      <div class="section__container">
-        <div class="booking__container">
-          <div class="booking__content">
-            <h2 class="section__header">Boook your stay</h2>
-            <p class="section__description">
+    <section class="contact">
+      <div class="contact__form" id="booking">
+            <h2 class="contact__header">Reserve a room</h2>
+            <p class="contact__description">
               Join our Royal Hotels community today and save more every time you
               book your dream stay around the world.
             </p>
-          </div>
-          
-          <div class="booking__form">
-            <form action="/">
-              <input type="text" placeholder="Name" />
-            </form>
-            <form action="/">
-              <input type="text" placeholder="Email" />
-            </form>
-          </div>
-          <div class="booking__form">
-            <form action="/">
-              <input type="text" placeholder="Check-in Date" />
-            </form>
-            <form action="/">
-              <input type="text" placeholder="Check-out Date" />
-            </form>
-          </div>
-          <div class="booking__form">
-            <form action="/">
-              <input type="text" placeholder="Type of Room" />
-            </form>
-            <form action="/">
-              <input type="text" placeholder="Number of Guests" />
-            </form>
-          </div>
-          <button class="confirm__btn">Confirm Booking</button>
+            <h3>Your Name <span class="required">*</span></h3>
+            <input type="text" id="name" placeholder="Name">
 
-          
-        </div>
+            <h3>Your E-mail <span class="required">*</span></h3>
+            <input type="text" id="email" placeholder="Email">
+
+            <h3>Your Check-in Date <span class="required">*</span></h3>
+            <input type="text" id="email" placeholder="Check-in Date">
+
+            <h3>Your Check-out Date <span class="required">*</span></h3>
+            <input type="text" id="email" placeholder="Check-out Date">
+
+            <h3>Type of Room <span class="required">*</span></h3>
+            <select id="date">
+              <option value="">Please select</option>
+              <option>Presidential Suite</option>
+              <option>Executive Suite</option>
+              <option>Deluxe Room</option>
+            </select>
+
+            <h3>Number of Guests<span class="required">*</span></h3>
+            <!-- <div class="hint">Minimum project rate is $500 (USD)</div> -->
+            <input type="number" id="budget" placeholder="Enter number">
+
+            <button>Confirm Reservation</button>
       </div>
     </section>
 
