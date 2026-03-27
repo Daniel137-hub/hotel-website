@@ -459,6 +459,10 @@ footer {
   text-align: center;
 }
 
+.footer__bar a {
+  color: var(--text-light);
+}
+
 @media (width > 540px) {
   .room__container .section__header {
     text-align: left;
@@ -608,6 +612,11 @@ footer {
   .section__header {
     font-size: 2.5rem;
   }
+
+  .contact__form {
+    padding: 2rem 1rem 3rem 1rem;
+    margin: 3rem 1.5rem;
+}
 
   .contact__header {
     margin-bottom: 0;
