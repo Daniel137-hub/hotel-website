@@ -25,7 +25,7 @@
           <li><a href="#home">HOME</a></li>
           <li><a href="#service">SERVICES</a></li>
           <li><a href="#room">ACCOMODATION</a></li>
-          <li><a href="#booking">RESERVATION</a></li>
+          <li><a href="#contact">RESERVATION</a></li>
         </ul>
       </nav>
 
@@ -195,39 +195,46 @@
       </div>
     </section>
 
-    <section class="contact">
-      <div class="contact__form" id="booking">
-            <h2 class="contact__header">Reserve a room</h2>
-            <p class="contact__description">
-              Join Luxury Hotel today and save more every time you
-              book your dream stay.
-            </p>
-            <h3>Your Name <span class="required">*</span></h3>
-            <input type="text" id="name" placeholder="Name">
-
-            <h3>Your E-mail <span class="required">*</span></h3>
-            <input type="email" id="email" placeholder="Email">
-
-            <h3>Your Check-in Date <span class="required">*</span></h3>
-            <input type="date" id="email" placeholder="Check-in Date">
-
-            <h3>Your Check-out Date <span class="required">*</span></h3>
-            <input type="date" id="email" placeholder="Check-out Date">
-
-            <h3>Type of Room <span class="required">*</span></h3>
-            <select id="date">
-              <option value="">Please select</option>
-              <option>Presidential Suite</option>
-              <option>Executive Suite</option>
-              <option>Deluxe Room</option>
-            </select>
-
-            <h3>Number of Guests<span class="required">*</span></h3>
-            <!-- <div class="hint">Minimum project rate is $500 (USD)</div> -->
-            <input type="number" id="budget" placeholder="Enter number">
-
-            <button>Confirm Reservation</button>
-      </div>
+    <section class="contact" id="contact">
+      <div class="container">
+      <h2 class="contact__header">Reserve a room</h2>
+      <p class="contact__description">
+        Join Luxury Hotel today and save more every time you
+        book your dream stay.
+      </p>
+      <form action="https://formspree.io/f/xgopayvq" method="post">
+        <div class="form-group">
+          <label for="Name">Name *</label>
+          <input type="text" placeholder="Name" id="name" name="Name" required />
+        </div>
+        <div class="form-group">
+          <label for="Email">Email *</label>
+          <input type="email" placeholder="Email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="Check-in date">Check-in Date *</label>
+          <input type="date" id="check-in" name="Check-in date" required />
+        </div>
+        <div class="form-group">
+          <label for="Check-out date">Check-out Date</label>
+          <input type="date" id="check-out" name="Check-out date" required />
+        </div>
+        <div class="form-group">
+          <label for="Name">Type of Room *</label>
+          <select id="type of room" name="Type of room" required>
+            <option value="">Please select</option>
+            <option>Presidential Suite</option>
+            <option>Executive Suite</option>
+            <option>Deluxe Room</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="Number of Guests">Number of Guests *</label>
+          <input type="number" placeholder="Enter number" id="number" name="Number of Guests" required />
+        </div>
+        <input type="submit" value="Confirm Reservation" />
+      </form>
+    </div>
     </section>
 
     <footer>
